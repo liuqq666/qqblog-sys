@@ -1,0 +1,21 @@
+@url = http://localhost:3001/api
+@json = Content-Type: application/json
+###
+get {{url}}/users
+
+### 注册
+post {{url}}/register
+{{json}}
+
+{
+    "username":"zxl",
+    "password": "123"
+}
+### 登录
+post {{url}}/login
+{{json}}
+
+{
+    "username":"zxl",
+    "password": "123"
+}
